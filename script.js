@@ -915,7 +915,7 @@ function initContactForm() {
   if (!form) return;
 
   form.addEventListener('submit', function(e) {
-    e.preventDefault();
+    // e.preventDefault();
 
     // Basic validation
     let valid = true;
@@ -937,20 +937,6 @@ function initContactForm() {
 
     if (!valid) return;
 
-    // Simulate submission (replace with real endpoint / Formspree / EmailJS)
-    const submitBtn = form.querySelector('.btn-submit');
-    const originalText = submitBtn.textContent;
-    submitBtn.disabled = true;
-    submitBtn.textContent = '...';
-
-    setTimeout(() => {
-      if (success) success.classList.add('visible');
-      form.reset();
-      submitBtn.disabled = false;
-      submitBtn.textContent = originalText;
-      // Scroll success into view
-      success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }, 800);
   });
 
   // Clear error styling on input
