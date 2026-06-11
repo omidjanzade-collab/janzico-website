@@ -1687,3 +1687,9 @@ input, select, textarea {
   width: auto;
   display: block;
 }
+
+.footer-logo img {
+    height: 230px;
+    width: auto;
+    display: block;
+}
