@@ -1681,3 +1681,9 @@ input, select, textarea {
   }
   html { scroll-behavior: auto; }
 }
+
+.logo img {
+  height: 52px;
+  width: auto;
+  display: block;
+}
