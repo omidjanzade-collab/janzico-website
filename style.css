@@ -1683,13 +1683,13 @@ input, select, textarea {
 }
 
 .logo img {
-  height: 150px;
+  height: 100px;
   width: auto;
   display: block;
 }
 
 .footer-logo img {
-    height: 400px;
+    height: 200px;
     width: auto;
     display: block;
 }
